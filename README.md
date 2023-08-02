@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# information
+# `information`: Tools for Information Theory
 
 <!-- badges: start -->
 <!-- badges: end -->
