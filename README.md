@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-<img src="http://svmiller.com/images/peacesciencer-hexlogo.png" alt="peacesciencer  hexlogo" align="right" width="200" style="padding: 0 15px; float: right;"/>
+<img src="https://raw.githubusercontent.com/jackobailey/information/master/inst/figures/information_hex.png" alt="information hexlogo" align="right" width="200" style="padding: 0 15px; float: right;"/>
 
 The goal of information is to …
 
