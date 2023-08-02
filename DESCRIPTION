@@ -1,0 +1,19 @@
+Package: information
+Title: Tools for Information Theory
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jack", "Bailey", , "jack.bailey@manchester.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8517-5018"))
+Description: The {information} package provides tools to compute many important metrics in information theory. These tools are also versatile and easy to use. As such, they should streamline your analysis and leave you ample time to explore the complexity and uncertainty in your data.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Imports: 
+    rlang
