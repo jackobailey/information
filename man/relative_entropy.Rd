@@ -24,5 +24,5 @@ Relative entropy, also known as Kullback-Leibler divergence, quantifies the diff
 \code{relative_entropy()} provides a simple way to compute relative entropy in \code{R}.
 }
 \references{
-Shannon, C. E. (1948). A mathematical theory of communication, \emph{The Bell System Technical Journal}. 27(3), pp. 379–423.
+Kullback, S, and Leibler, R.A. (1951). On information and sufficiency, \emph{Annals of Mathematical Statistics}. 22(1), pp. 79-86. DOI: 10.1214/aoms/1177729694
 }
