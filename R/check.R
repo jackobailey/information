@@ -5,7 +5,7 @@
 
 check_double <- function(p){
 
-  if(is.double(p) == F) rlang::abort("Input values must be a vector of doubles (e.g. c(0.5, 0.4, 0.1)")
+  if(is.double(p) == F) stop("Input values must be a vector of doubles (e.g. c(0.5, 0.4, 0.1)")
 
 }
 
@@ -39,7 +39,7 @@ check_probability <- function(p){
 
     # Output error
 
-    rlang::abort(
+    stop(
       paste(
         "All input values must be valid probabilities, but",
         n, val,
@@ -60,6 +60,6 @@ check_probability <- function(p){
 
 check_is_matrix <- function(p){
 
-  if(is.matrix(p) == F) rlang::abort("Input values must be in matrix format.")
+  if(is.matrix(p) == F) stop("Input values must be in matrix format.")
 
 }
