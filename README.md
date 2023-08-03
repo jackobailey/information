@@ -9,8 +9,8 @@
 <img src="https://raw.githubusercontent.com/jackobailey/information/master/inst/figures/information_hex.png" alt="information hexlogo" align="right" width="275" style="padding: 0 15px; float: right;"/>
 
 The `information` package contains a suite of important information
-theoretic functions. This includes entropy, relative entropy, mutual
-information, amongst others. What’s more, these functions are simple,
+theoretic functions. Its includes entropy, relative entropy, mutual
+information, and other quantities. All functions are simple,
 lightweight, and rely on few dependencies. As such, they should be
 robust and easy to put into practice when applying information theoretic
 insights in R.
@@ -33,17 +33,14 @@ inputs. Here is a simple example showing how to compute the entropy of
 ``` r
 
 # Load package
-
 library(information)
 
 
 # Set seed
-
 set.seed(01)
 
 
 # Simulate 100 fair coin flips
-
 coin_flips <- 
   sample(
     c("H", "T"),
@@ -55,7 +52,6 @@ coin_flips <-
 
 
 # Compute entropy
-
 entropy(coin_flips)
 #> [1] 0.9997114
 ```
