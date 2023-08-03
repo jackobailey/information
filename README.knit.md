@@ -4,14 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
+
 
 # `information`: Information Theoretic Tools in R
 
@@ -34,7 +27,8 @@ devtools::install_github("jackobailey/information")
 
 All of the functions in `information` take probability distributions as inputs. Here is a simple example showing how to compute the entropy of 100 fair coin flips in bits.
 
-```{r coin-flips}
+
+```r
 
 # Load package
 
@@ -61,5 +55,5 @@ coin_flips <-
 # Compute entropy
 
 entropy(coin_flips)
-
+#> [1] 0.9997114
 ```

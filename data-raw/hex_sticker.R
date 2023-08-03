@@ -47,9 +47,9 @@ shannon <-
 hex_sticker <-
   sticker(
     shannon,
-    s_x = 1,
-    s_y = 0.99,
-    s_width = 0.83,
+    s_x = 0.95,
+    s_y = 1.1,
+    s_width = 0.9,
     package = "",
     h_fill = "#DDDDDD",
     h_color = "#AAAAAA",
@@ -58,16 +58,22 @@ hex_sticker <-
     dpi = 600,
     white_around_sticker = T,
     spotlight = T,
-    l_width = 40
+    l_width = 40,
+    filename =
+      here(
+        "inst",
+        "figures",
+        "information_hex.png"
+      )
   ) +
   annotate(
     geom = "text",
-    x = 1.0075,
+    x = 1.005,
     y = 0.475,
     label = "information",
     colour = "#222222",
     family = "Cabin",
-    size = 30
+    size = 38
   ) +
   annotate(
     geom = "text",
@@ -76,7 +82,7 @@ hex_sticker <-
     label = "information",
     colour = "#DDDDDD",
     family = "Cabin",
-    size = 30
+    size = 38
   )
 
 

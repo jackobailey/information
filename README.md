@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-<img src="https://raw.githubusercontent.com/jackobailey/information/master/inst/figures/information_hex.png" alt="information hexlogo" align="right" width="200" style="padding: 0 15px; float: right;"/>
+<img src="https://raw.githubusercontent.com/jackobailey/information/master/inst/figures/information_hex.png" alt="information hexlogo" align="right" width="275" style="padding: 0 15px; float: right;"/>
 
 The `information` package contains a suite of important information
 theoretic functions. This includes entropy, relative entropy, mutual
