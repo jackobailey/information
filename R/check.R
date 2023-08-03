@@ -5,7 +5,7 @@
 
 check_double <- function(p){
 
-  if(is.double(p) == F) stop("Input values must be a vector of doubles (e.g. c(0.5, 0.4, 0.1)")
+  if(is.double(p) == F) stop("Input values must be formatted as doubles (e.g. c(0.5, 0.4, 0.1)")
 
 }
 
