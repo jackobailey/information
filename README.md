@@ -8,50 +8,54 @@
 
 <img src="https://raw.githubusercontent.com/jackobailey/information/master/inst/figures/information_hex.png" alt="information hexlogo" align="right" width="200" style="padding: 0 15px; float: right;"/>
 
-The goal of information is to …
+The `information` package contains a suite of important information
+theoretic functions. This includes entropy, relative entropy, mutual
+information, amongst others. What’s more, these functions are simple,
+lightweight, and rely on few dependencies. As such, they should be
+robust and easy to put into practice when applying information theoretic
+insights in R.
 
 ## Installation
 
-You can install the development version of information from
-[GitHub](https://github.com/) with:
+For now, `information` is available only on GitHub. You can install it
+using `devtools` by running the following code in R:
 
 ``` r
-# install.packages("devtools")
 devtools::install_github("jackobailey/information")
 ```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+All of the functions in `information` take probability distributions as
+inputs. Here is a simple example showing how to compute the entropy of
+100 fair coin flips in bits.
 
 ``` r
+
+# Load package
+
 library(information)
-## basic example code
+
+
+# Set seed
+
+set.seed(01)
+
+
+# Simulate 100 fair coin flips
+
+coin_flips <- 
+  sample(
+    c("H", "T"),
+    size = 100,
+    replace = T
+    ) |> 
+  table() |> 
+  prop.table()
+
+
+# Compute entropy
+
+entropy(coin_flips)
+#> [1] 0.9997114
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
