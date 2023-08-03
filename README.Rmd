@@ -24,7 +24,7 @@ The `information` package contains a suite of important information theoretic fu
 
 ## Installation
 
-For now, `information` is available only on GitHub. You can install it using `devtools` by running the following code in R:
+For now, `information` is available only on GitHub. To install it, run the following code in R:
 
 ``` r
 devtools::install_github("jackobailey/information")
@@ -39,10 +39,8 @@ All of the functions in `information` take probability distributions as inputs. 
 # Load package
 library(information)
 
-
 # Set seed
 set.seed(01)
-
 
 # Simulate 100 fair coin flips
 coin_flips <- 
@@ -53,7 +51,6 @@ coin_flips <-
     ) |> 
   table() |> 
   prop.table()
-
 
 # Compute entropy
 entropy(coin_flips)

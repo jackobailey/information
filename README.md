@@ -17,8 +17,8 @@ insights in R.
 
 ## Installation
 
-For now, `information` is available only on GitHub. You can install it
-using `devtools` by running the following code in R:
+For now, `information` is available only on GitHub. To install it, run
+the following code in R:
 
 ``` r
 devtools::install_github("jackobailey/information")
@@ -35,10 +35,8 @@ inputs. Here is a simple example showing how to compute the entropy of
 # Load package
 library(information)
 
-
 # Set seed
 set.seed(01)
-
 
 # Simulate 100 fair coin flips
 coin_flips <- 
@@ -49,7 +47,6 @@ coin_flips <-
     ) |> 
   table() |> 
   prop.table()
-
 
 # Compute entropy
 entropy(coin_flips)
