@@ -1,5 +1,5 @@
 Package: information
-Title: Tools for Information Theory
+Title: Information Theoretic Tools in R
 Version: 0.0.0.9000
 Authors@R: 
     person("Jack", "Bailey", , "jack.bailey@manchester.ac.uk", role = c("aut", "cre"),
