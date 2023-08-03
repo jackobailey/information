@@ -16,22 +16,6 @@ library(here)
 font_add_google("Cabin")
 
 
-# Create ggplot object
-
-# p <-
-#   ggplot() +
-#   annotate(
-#     geom = "text",
-#     x = 0,
-#     y = 0,
-#     label = "01",
-#     size = 100,
-#     colour = "#111111"
-#   ) +
-#   theme_void() +
-#   theme_transparent()
-
-
 # Load image of Claude Shannon
 
 shannon <-
