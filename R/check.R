@@ -63,3 +63,27 @@ check_is_matrix <- function(p){
   if(is.matrix(p) == F) stop("Input values must be in matrix format.")
 
 }
+
+
+#' Check Input Sums to One
+#'
+#' @param p A numeric vector or matrix.
+#'
+
+check_sums_one <- function(p){
+
+  # Check input is a double
+
+  check_double(p)
+
+
+  # Check input is a probability
+
+  check_probability(p)
+
+
+  # Check that all values sum to 1
+
+  if(round(sum(p), 8) != 1) warning("Input probabilities do not sum to 1!")
+
+}

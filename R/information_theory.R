@@ -63,6 +63,11 @@ info <- function(p = NULL, base = 2){
 
 entropy <- function(p = NULL, base = 2){
 
+  # Check input probability sums to 1
+
+  check_sums_one(p)
+
+
   # Compute information content
 
   entropy <- sum(p * info(p, base = base), na.rm = T)
@@ -96,6 +101,11 @@ entropy <- function(p = NULL, base = 2){
 #' @export
 
 joint_entropy <- function(p = NULL, base = 2){
+
+  # Check input probability sums to 1
+
+  check_sums_one(p)
+
 
   # Check that the input is a matrix
 
@@ -135,6 +145,11 @@ joint_entropy <- function(p = NULL, base = 2){
 #' @export
 
 mutual_info <- function(p = NULL, base = 2){
+
+  # Check input probability sums to 1
+
+  check_sums_one(p)
+
 
   # Check that the input is a matrix
 
@@ -178,6 +193,11 @@ mutual_info <- function(p = NULL, base = 2){
 #' @export
 
 conditional_entropy <- function(p = NULL, margin = 1, base = 2){
+
+  # Check input probability sums to 1
+
+  check_sums_one(p)
+
 
   # Compute conditional entropy
 
@@ -227,14 +247,14 @@ conditional_entropy <- function(p = NULL, margin = 1, base = 2){
 
 cross_entropy <- function(p = NULL, q = NULL, base = 2, log0 = FALSE){
 
-  # Check that p is a vector of probabilities
+  # Check p is a probability and sums to 1
 
-  check_probability(p)
+  check_sums_one(p)
 
 
-  # Check that q is a vector of probabilities
+  # Check q is a probability and sums to 1
 
-  check_probability(q)
+  check_sums_one(q)
 
 
   # Avoid log(0) using additive smoothing and normalisation
@@ -368,14 +388,9 @@ info_radius <- function(p = NULL, q = NULL, base = 2){
 
 pointwise_mutual_info <- function(p = NULL, base = 2){
 
-  # Check that all values are numeric
+  # Check p is a probability and sums to 1
 
-  check_double(p)
-
-
-  # Check that all values are between 0 and 1
-
-  check_probability(p)
+  check_sums_one(p)
 
 
   # Check that the input is a matrix
@@ -415,6 +430,11 @@ pointwise_mutual_info <- function(p = NULL, base = 2){
 #' @export
 
 variation_of_info <- function(p = NULL, base = 2){
+
+  # Check p is a probability and sums to 1
+
+  check_sums_one(p)
+
 
   # Check that the input is a matrix
 

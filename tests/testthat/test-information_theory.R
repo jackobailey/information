@@ -78,7 +78,7 @@ test_that(
     )
 
 
-    # H(X) = log_{2}(N) - D_{KL}(p_X(x)||P_U(X))
+    # H(X) = \text{log}_{2}(N) - D_{KL}(p_X(x)||P_U(X))
 
     expect_equal(
       entropy(p),
